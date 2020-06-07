@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+        android:id="@+id/tv_MyAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_70"
+        android:background="@color/topbarblue"
+        android:text="@string/MyAndroidCompanion"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin_30"
+        android:fontFamily="cursive"
+        />
+
+    <ImageView
+        android:id="@+id/iv_android"
+        android:layout_width="match_parent"
+        android:src="@drawable/android"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/margin_270"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/bt_topics"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/TopicsCovered"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="@dimen/margin_10"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/red"
+            android:textSize="@dimen/margin_20"
+            android:drawableTop="@drawable/ic_action_topicscovered"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:id="@+id/bt_notes"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/notes"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="@dimen/margin_10"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/mud"
+            android:textSize="@dimen/margin_20"
+            android:drawableTop="@drawable/ic_action_notes"
+            android:textColor="@color/white"
+
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_projects"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/projects"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/purple"
+            android:textSize="@dimen/margin_20"
+            android:drawableTop="@drawable/ic_action_projects"
+            android:textColor="@color/white"
+
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/bt_homework"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/homework"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="@dimen/margin_10"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/topbarblue"
+            android:textSize="@dimen/margin_20"
+            android:drawableTop="@drawable/ic_action_homework"
+            android:textColor="@color/white"
+
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
