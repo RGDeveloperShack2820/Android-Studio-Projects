@@ -11,6 +11,20 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
+        <TextView
+            android:id="@+id/tv_MyAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_15"
+            android:background="@color/topbarblue"
+            android:text="@string/MyAndroidCompanion"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_30"
+            android:fontFamily="cursive"
+            />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 

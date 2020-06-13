@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    tools:context=".MainActivity"
     android:layout_width="match_parent"
+    tools:showIn="@layout/activity_main"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-    <TextView
-        android:id="@+id/tv_MyAndroid"
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_70"
-        android:background="@color/topbarblue"
-        android:text="@string/MyAndroidCompanion"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/margin_30"
-        android:fontFamily="cursive"
-        />
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <ImageView
         android:id="@+id/iv_android"
         android:layout_width="match_parent"
         android:src="@drawable/android"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
         android:scaleType="centerCrop"
-        android:layout_height="@dimen/margin_270"/>
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,12 +45,16 @@
             android:id="@+id/bt_topics"
             android:layout_width="match_parent"
             android:layout_weight="1"
+            android:gravity="center"
             android:text="@string/TopicsCovered"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="5dp"
             android:fontFamily="sans-serif-condensed-light"
-            android:padding="@dimen/margin_10"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:background="@color/red"
+            android:background="@drawable/tc_bt_bg"
             android:textSize="@dimen/margin_20"
             android:drawableTop="@drawable/ic_action_topicscovered"
             android:textColor="@color/white"
@@ -54,11 +66,16 @@
             android:layout_width="match_parent"
             android:layout_weight="1"
             android:text="@string/notes"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="5dp"
             android:fontFamily="sans-serif-condensed-light"
             android:padding="@dimen/margin_10"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:background="@color/mud"
+            android:background="@drawable/notes_bt_bg"
             android:textSize="@dimen/margin_20"
             android:drawableTop="@drawable/ic_action_notes"
             android:textColor="@color/white"
@@ -82,10 +99,14 @@
             android:text="@string/projects"
             android:fontFamily="sans-serif-condensed-light"
             android:padding="@dimen/margin_10"
-            android:paddingTop="@dimen/margin_10"
+            android:gravity="center"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:background="@color/purple"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/projects_bt_bg"
             android:textSize="@dimen/margin_20"
             android:drawableTop="@drawable/ic_action_projects"
             android:textColor="@color/white"
@@ -100,15 +121,21 @@
             android:fontFamily="sans-serif-condensed-light"
             android:padding="@dimen/margin_10"
             android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/margin_10"
+
             android:textAllCaps="false"
-            android:background="@color/topbarblue"
+            android:background="@drawable/homework_bt_bg"
             android:textSize="@dimen/margin_20"
             android:drawableTop="@drawable/ic_action_homework"
             android:textColor="@color/white"
 
             android:layout_height="match_parent"/>
 
-
+    </LinearLayout>
     </LinearLayout>
 
 
