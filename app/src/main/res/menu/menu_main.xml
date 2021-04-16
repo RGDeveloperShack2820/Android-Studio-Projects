@@ -4,6 +4,7 @@
     tools:context="com.basic.myandroidcompanion.TopicsCovered_activity">
 
 
+
     <item
         android:id="@+id/action_search"
         android:orderInCategory="100"
